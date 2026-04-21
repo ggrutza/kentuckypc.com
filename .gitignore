@@ -4,3 +4,7 @@ Thumbs.db
 .idea/
 *.log
 node_modules/
+
+# Local download artifacts (not for source control)
+*.bundle
+*.tar.gz
