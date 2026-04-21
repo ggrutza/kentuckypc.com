@@ -37,16 +37,18 @@ python3 -m http.server 8080
 
 ## Things to swap in before launch
 
-1. **Real photos** — replace the gradient placeholder blocks in `gallery.html`
+1. **Drop in the real logo** — save the KPC logo as
+   `assets/img/logo.png` (ideally a tightly-cropped version, transparent
+   background or navy background matching `#0a1a6e`, ~800px wide). Until then
+   the site shows an SVG placeholder that approximates the logo.
+2. **Real photos** — replace the gradient placeholder blocks in `gallery.html`
    and the split-section `.image` divs with `<img>` tags pointing at files in
    `assets/img/`.
-2. **Phone number & address** — search the repo for "coming soon" and
+3. **Phone number & address** — search the repo for "coming soon" and
    "Kentucky, USA" to fill in real contact details.
-3. **Email addresses** — `info@kentuckypc.com` and `quotes@kentuckypc.com` are
+4. **Email addresses** — `info@kentuckypc.com` and `quotes@kentuckypc.com` are
    placeholders; confirm these mailboxes exist or change them.
-4. **Form handler** — `quote.html` and `contact.html` currently have inert
+5. **Form handler** — `quote.html` and `contact.html` currently have inert
    forms (`onsubmit="return false;"`). Wire them to Formspree, Netlify Forms,
    Basin, or a custom backend before going live.
-5. **Capability stats** on the home hero (oven size, part size, spec) — update
-   once the shop is operational.
 6. **Favicon / OG image** — add a `favicon.ico` and social share image.

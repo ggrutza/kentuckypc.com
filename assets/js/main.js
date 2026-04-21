@@ -48,3 +48,16 @@
     });
   });
 })();
+
+// Brand logo fallback — if logo.png isn't present, use the SVG placeholder
+(function () {
+  const fallback = "assets/img/logo-placeholder.svg";
+  const swap = (img) => {
+    if (img.src.endsWith(fallback)) return;
+    img.src = fallback;
+  };
+  document.querySelectorAll(".brand-logo").forEach((img) => {
+    if (img.complete && img.naturalWidth === 0) swap(img);
+    else img.addEventListener("error", () => swap(img), { once: true });
+  });
+})();

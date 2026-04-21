@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160" role="img" aria-label="Kentucky Powder Coating">
+  <rect width="640" height="160" fill="#0a1a6e"/>
+  <g fill="#ffffff" font-family="Archivo, Helvetica, Arial, sans-serif" font-weight="800">
+    <text x="24" y="98" font-size="72" letter-spacing="-2">KPC</text>
+    <path d="M24 112 L230 112 L216 122 L24 122 Z" fill="#ffffff" opacity="0.92"/>
+    <rect x="248" y="36" width="2" height="88" fill="#ffffff"/>
+    <text x="266" y="78" font-size="30" letter-spacing="2">KENTUCKY</text>
+    <text x="266" y="110" font-size="22" letter-spacing="3">POWDER COATING</text>
+  </g>
+</svg>
