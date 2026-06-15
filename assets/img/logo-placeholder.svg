@@ -1,10 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160" role="img" aria-label="Kentucky Powder Coating">
-  <rect width="640" height="160" fill="#0a1a6e"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 170" role="img" aria-label="Kentucky Powder Coating — Maysville, KY">
+  <rect width="640" height="170" fill="#0a1a6e"/>
   <g fill="#ffffff" font-family="Archivo, Helvetica, Arial, sans-serif" font-weight="800">
     <text x="24" y="98" font-size="72" letter-spacing="-2">KPC</text>
-    <path d="M24 112 L230 112 L216 122 L24 122 Z" fill="#ffffff" opacity="0.92"/>
-    <rect x="248" y="36" width="2" height="88" fill="#ffffff"/>
-    <text x="266" y="78" font-size="30" letter-spacing="2">KENTUCKY</text>
-    <text x="266" y="110" font-size="22" letter-spacing="3">POWDER COATING</text>
+    <path d="M24 112 L230 112 L216 122 L24 122 Z" fill="#ff6a13" opacity="0.95"/>
+    <rect x="248" y="30" width="2" height="100" fill="#ffffff" opacity="0.5"/>
+    <text x="266" y="74" font-size="30" letter-spacing="2">KENTUCKY</text>
+    <text x="266" y="106" font-size="22" letter-spacing="3">POWDER COATING</text>
+    <text x="266" y="134" font-size="13" letter-spacing="3.5" fill="#a8b3dc" font-weight="600">MAYSVILLE, KENTUCKY</text>
   </g>
 </svg>
