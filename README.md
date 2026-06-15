@@ -49,20 +49,25 @@ python3 -m http.server 8080
    `LocalBusiness` JSON-LD in `index.html` (`"telephone"` field).
 2. **Email addresses** — `info@kentuckypc.com` and `quotes@kentuckypc.com` are
    placeholders; confirm these mailboxes exist or change them.
-3. **Drop in the real logo** — save the KPC logo as
-   `assets/img/logo.png` (ideally a tightly-cropped version, transparent
-   background or navy background matching `#0a1a6e`, ~800px wide). Until then
-   the site shows an SVG placeholder (`assets/img/logo-placeholder.svg`) that
-   approximates the logo — `main.js` swaps to it automatically if `logo.png`
-   is missing.
-4. **Real photos** — replace the gradient placeholder blocks in `gallery.html`
+3. **Real photos** — replace the gradient placeholder blocks in `gallery.html`
    and the split-section `.image` divs with `<img>` tags pointing at files in
    `assets/img/`. Gallery copy currently frames items as "the kind of work we
    take on" rather than completed jobs — update once you have real project shots.
-5. **Form handler** — `quote.html` and `contact.html` currently have inert
+4. **Form handler** — `quote.html` and `contact.html` currently have inert
    forms (`onsubmit="return false;"`). Wire them to Formspree, Netlify Forms,
    Basin, or a custom backend before going live.
-6. **Verify capability claims** — service/equipment descriptions are written
-   conservatively for a new shop. Adjust them to match your actual equipment
-   and processes (e.g. oven size, blast media, certifications).
-7. **Favicon / OG image** — add a `favicon.ico` and social share image.
+5. **Favicon / OG image** — add a `favicon.ico` and social share image.
+
+## Brand & logo
+
+- **Logo:** the real KPC logo is in place — `assets/img/logo.png` (white
+  knockout, for the navy header/footer) and `assets/img/logo-color.png`
+  (full-color navy/steel, for light backgrounds), both transparent PNGs
+  extracted from the supplied artwork.
+- **Colors:** brand navy `#0a1470` and steel gray `#7d8288` come from the
+  logo; industrial **safety orange** `#ff6a13` and **hazard yellow** `#ffce26`
+  are accents. Hazard-stripe strips, the `40 FT` capacity callouts, the
+  steel-plate feature band, and color-coded service cards carry the
+  heavy-industrial theme.
+- **40-foot capacity** is featured throughout (hero badge, stat strip, a
+  dedicated steel band, services, and About). Confirmed accurate.
