@@ -58,6 +58,27 @@ python3 -m http.server 8080
    Basin, or a custom backend before going live.
 5. **Favicon / OG image** — add a `favicon.ico` and social share image.
 
+## Photography (IMPORTANT — placeholders)
+
+The home page is **photo-led** (Enerfab-style): a full-bleed hero, a "Markets
+We Serve" photo-card grid, and a full-width cure-oven feature band. Those
+images are **AI-generated stand-ins**, hotlinked from an image-generation CDN
+because this build environment can't download them into the repo. Before
+launch, **download each image into `assets/img/photos/` (or replace with real
+shop photos) and update the `background-image` URLs in `index.html`** — the
+hotlinked CDN URLs are not guaranteed to be permanent.
+
+Current placeholder image URLs (all on `d8j0ntlcm91z4.cloudfront.net/...`):
+
+| Slot | File |
+|------|------|
+| Hero | `hf_20260616_200846_9010126b-...png` |
+| Market · Industrial | `hf_20260616_200916_625a69d8-...png` |
+| Market · Automotive | `hf_20260616_201051_7290ff67-...png` |
+| Market · Architectural | `hf_20260616_201118_8e51a9a8-...png` |
+| Market · Agricultural | `hf_20260616_201144_b6227ef4-...png` |
+| Feature · Cure oven | `hf_20260616_201203_d98044de-...png` |
+
 ## Brand & logo
 
 - **Logo:** the real KPC logo is in place — `assets/img/logo.png` (white
