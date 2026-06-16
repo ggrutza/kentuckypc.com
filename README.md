@@ -64,6 +64,16 @@ python3 -m http.server 8080
   knockout, for the navy header/footer) and `assets/img/logo-color.png`
   (full-color navy/steel, for light backgrounds), both transparent PNGs
   extracted from the supplied artwork.
+- **Typography:** IBM Plex superfamily — **Sans Condensed** for uppercase
+  display headlines, **Sans** for body, and **Mono** for all spec/label text
+  (eyebrows, form labels, RAL codes, ruler scale, stat labels). The mono layer
+  gives the site a fab-shop "traveler / spec-sheet" character.
+- **Signature elements:** a dimensional **40-ft ruler** in the capacity band
+  (tick marks + labeled scale) and a **finish swatch wall** on the home page
+  showing real RAL powder-coat colors with finish-type tags.
+- **Icons & social:** `favicon.ico`, `apple-touch-icon.png`, `assets/img/icon-*.png`,
+  and an Open Graph share image (`assets/img/og-image.png`) are generated from
+  the KPC mark; favicon + OG tags are wired into every page.
 - **Colors:** brand navy `#0a1470` and steel gray `#7d8288` come from the
   logo; industrial **safety orange** `#ff6a13` and **hazard yellow** `#ffce26`
   are accents. Hazard-stripe strips, the `40 FT` capacity callouts, the
