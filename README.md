@@ -68,6 +68,12 @@ python3 -m http.server 8080
   display headlines, **Sans** for body, and **Mono** for all spec/label text
   (eyebrows, form labels, RAL codes, ruler scale, stat labels). The mono layer
   gives the site a fab-shop "traveler / spec-sheet" character.
+- **Hero concept:** "raw steel in → flawless finish out." The headline enacts
+  it (outlined "raw" line → solid color "finished" line), and a steel **plate
+  animates from bare/rusted to a glossy cured coat** on load via a clip-path
+  cure-line sweep (`.hero-plate`, respects `prefers-reduced-motion`). A
+  fab-drawing **title-block** rail under the hero carries location / capacity /
+  scope / hours in mono.
 - **Signature elements:** a dimensional **40-ft ruler** in the capacity band
   (tick marks + labeled scale) and a **finish swatch wall** on the home page
   showing real RAL powder-coat colors with finish-type tags.
