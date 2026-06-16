@@ -38,11 +38,11 @@
   <main>
     <section class="page-hero">
       <div class="container">
-        <span class="eyebrow">Our Work</span>
-        <h1>The kind of work we take on.</h1>
-        <p class="lead">From structural steel to one-off custom pieces, here's the range of
-          industrial, automotive, architectural, and custom finishing we handle. We'll be adding
-          photos from our own shop as jobs come through the door.</p>
+        <span class="eyebrow">Our Work · Before / After</span>
+        <h1>From bare steel to a finish that lasts.</h1>
+        <p class="lead">Drag the slider on any piece to watch raw, rusted metal become a cured,
+          color-matched powder coat. A look at the range of industrial, automotive, architectural,
+          and custom work we take on.</p>
       </div>
     </section>
 
@@ -56,56 +56,72 @@
           <button data-filter="custom">Custom</button>
         </div>
 
-        <div class="gallery-grid">
-          <div class="gallery-item reveal" data-category="industrial">
-            <div class="bg bg-1"></div>
-            <div class="placeholder">Photo placeholder</div>
-            <div class="overlay"><div><span>Industrial</span><strong>Structural weldment — matte black</strong></div></div>
+        <div class="ba-grid">
+          <div class="ba reveal" data-category="industrial" style="--pos:50%">
+            <div class="ba-layer ba-after" style="background-color:#0E0E10"></div>
+            <div class="ba-layer ba-before"></div>
+            <div class="ba-divider"></div>
+            <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Structural weldment — drag to compare bare steel and coated finish" />
+            <div class="ba-handle" aria-hidden="true">↔</div>
+            <span class="ba-tag b">Before · Raw</span>
+            <span class="ba-tag a">After · Coated</span>
+            <div class="ba-meta"><span class="cat">Industrial</span><span>RAL 9005 · Matte Black</span></div>
           </div>
-          <div class="gallery-item reveal" data-category="automotive">
-            <div class="bg bg-2"></div>
-            <div class="placeholder">Photo placeholder</div>
-            <div class="overlay"><div><span>Automotive</span><strong>Suspension set — gloss black</strong></div></div>
+          <div class="ba reveal" data-category="automotive" style="--pos:50%">
+            <div class="ba-layer ba-after" style="background-color:#C1121C"></div>
+            <div class="ba-layer ba-before"></div>
+            <div class="ba-divider"></div>
+            <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Suspension set — drag to compare bare steel and coated finish" />
+            <div class="ba-handle" aria-hidden="true">↔</div>
+            <span class="ba-tag b">Before · Raw</span>
+            <span class="ba-tag a">After · Coated</span>
+            <div class="ba-meta"><span class="cat">Automotive</span><span>RAL 3020 · Gloss Red</span></div>
           </div>
-          <div class="gallery-item reveal" data-category="custom">
-            <div class="bg bg-3"></div>
-            <div class="placeholder">Photo placeholder</div>
-            <div class="overlay"><div><span>Custom</span><strong>Motorcycle frame — candy orange</strong></div></div>
+          <div class="ba reveal" data-category="custom" style="--pos:50%">
+            <div class="ba-layer ba-after" style="background-color:#CB4F18"></div>
+            <div class="ba-layer ba-before"></div>
+            <div class="ba-divider"></div>
+            <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Motorcycle frame — drag to compare bare steel and coated finish" />
+            <div class="ba-handle" aria-hidden="true">↔</div>
+            <span class="ba-tag b">Before · Raw</span>
+            <span class="ba-tag a">After · Coated</span>
+            <div class="ba-meta"><span class="cat">Custom</span><span>RAL 2009 · Candy Orange</span></div>
           </div>
-          <div class="gallery-item reveal" data-category="architectural">
-            <div class="bg bg-4"></div>
-            <div class="placeholder">Photo placeholder</div>
-            <div class="overlay"><div><span>Architectural</span><strong>Railings — textured bronze</strong></div></div>
+          <div class="ba reveal" data-category="architectural" style="--pos:50%">
+            <div class="ba-layer ba-after" style="background-color:#293133"></div>
+            <div class="ba-layer ba-before"></div>
+            <div class="ba-divider"></div>
+            <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Railings — drag to compare bare steel and coated finish" />
+            <div class="ba-handle" aria-hidden="true">↔</div>
+            <span class="ba-tag b">Before · Raw</span>
+            <span class="ba-tag a">After · Coated</span>
+            <div class="ba-meta"><span class="cat">Architectural</span><span>RAL 7016 · Textured Anthracite</span></div>
           </div>
-          <div class="gallery-item reveal" data-category="industrial">
-            <div class="bg bg-5"></div>
-            <div class="placeholder">Photo placeholder</div>
-            <div class="overlay"><div><span>Industrial</span><strong>Equipment skid — safety yellow</strong></div></div>
+          <div class="ba reveal" data-category="industrial" style="--pos:50%">
+            <div class="ba-layer ba-after" style="background-color:#FAD201"></div>
+            <div class="ba-layer ba-before"></div>
+            <div class="ba-divider"></div>
+            <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Equipment skid — drag to compare bare steel and coated finish" />
+            <div class="ba-handle" aria-hidden="true">↔</div>
+            <span class="ba-tag b">Before · Raw</span>
+            <span class="ba-tag a">After · Coated</span>
+            <div class="ba-meta"><span class="cat">Industrial</span><span>RAL 1023 · Safety Yellow</span></div>
           </div>
-          <div class="gallery-item reveal" data-category="automotive">
-            <div class="bg bg-6"></div>
-            <div class="placeholder">Photo placeholder</div>
-            <div class="overlay"><div><span>Automotive</span><strong>Wheels — satin graphite</strong></div></div>
-          </div>
-          <div class="gallery-item reveal" data-category="custom">
-            <div class="bg bg-7"></div>
-            <div class="placeholder">Photo placeholder</div>
-            <div class="overlay"><div><span>Custom</span><strong>Patio furniture refinish</strong></div></div>
-          </div>
-          <div class="gallery-item reveal" data-category="architectural">
-            <div class="bg bg-8"></div>
-            <div class="placeholder">Photo placeholder</div>
-            <div class="overlay"><div><span>Architectural</span><strong>Site gate — super-durable black</strong></div></div>
-          </div>
-          <div class="gallery-item reveal" data-category="industrial">
-            <div class="bg bg-9"></div>
-            <div class="placeholder">Photo placeholder</div>
-            <div class="overlay"><div><span>Industrial</span><strong>Storage rack — industrial gray</strong></div></div>
+          <div class="ba reveal" data-category="custom" style="--pos:50%">
+            <div class="ba-layer ba-after" style="background-color:#06357A"></div>
+            <div class="ba-layer ba-before"></div>
+            <div class="ba-divider"></div>
+            <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Trailer frame — drag to compare bare steel and coated finish" />
+            <div class="ba-handle" aria-hidden="true">↔</div>
+            <span class="ba-tag b">Before · Raw</span>
+            <span class="ba-tag a">After · Coated</span>
+            <div class="ba-meta"><span class="cat">Custom</span><span>RAL 5010 · Gloss Blue</span></div>
           </div>
         </div>
 
-        <p class="text-center" style="margin-top:40px;color:var(--color-muted);font-size:0.9rem;">
-          Photos coming soon — drop in replacement images under <code>assets/img/</code> and swap the placeholder blocks for <code>&lt;img&gt;</code> tags.
+        <p class="text-center" style="margin-top:36px;font-family:var(--font-mono);font-size:0.82rem;color:var(--ink-soft);">
+          Drag any slider to see bare steel become a cured finish. These are illustrative —
+          real shop before/afters drop straight into the same tiles.
         </p>
       </div>
     </section>

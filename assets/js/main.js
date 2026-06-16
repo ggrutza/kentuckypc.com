@@ -34,7 +34,7 @@
 // Gallery filter
 (function () {
   const buttons = document.querySelectorAll("[data-filter]");
-  const items = document.querySelectorAll(".gallery-item");
+  const items = document.querySelectorAll(".gallery-item, .ba");
   if (!buttons.length) return;
   buttons.forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -46,6 +46,17 @@
         item.style.display = show ? "" : "none";
       });
     });
+  });
+})();
+
+// Before/after finish sliders
+(function () {
+  document.querySelectorAll(".ba-range").forEach((range) => {
+    const ba = range.closest(".ba");
+    if (!ba) return;
+    const sync = () => ba.style.setProperty("--pos", range.value + "%");
+    range.addEventListener("input", sync);
+    sync();
   });
 })();
 
