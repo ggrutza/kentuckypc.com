@@ -49,6 +49,39 @@
   });
 })();
 
+// Header solidifies on scroll
+(function () {
+  const header = document.querySelector(".site-header");
+  if (!header) return;
+  const onScroll = () => header.classList.toggle("scrolled", window.scrollY > 24);
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+})();
+
+// Count-up stats when they scroll into view
+(function () {
+  const nums = document.querySelectorAll("[data-count]");
+  if (!nums.length) return;
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const run = (el) => {
+    const target = parseFloat(el.dataset.count);
+    if (reduce || !Number.isFinite(target)) { el.textContent = el.dataset.count; return; }
+    const dur = 1200, t0 = performance.now();
+    const tick = (t) => {
+      const p = Math.min(1, (t - t0) / dur);
+      const eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(target * eased).toString();
+      if (p < 1) requestAnimationFrame(tick); else el.textContent = el.dataset.count;
+    };
+    requestAnimationFrame(tick);
+  };
+  if (!("IntersectionObserver" in window)) { nums.forEach((n) => (n.textContent = n.dataset.count)); return; }
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => { if (e.isIntersecting) { run(e.target); io.unobserve(e.target); } });
+  }, { threshold: 0.5 });
+  nums.forEach((n) => io.observe(n));
+})();
+
 // Before/after finish sliders
 (function () {
   document.querySelectorAll(".ba-range").forEach((range) => {
