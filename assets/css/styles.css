@@ -896,6 +896,25 @@ section h2 + p.lead { margin-bottom: 3rem; }
 }
 .ba-meta .cat { color: var(--color-accent); letter-spacing: 0.1em; text-transform: uppercase; }
 
+/* ---------- FAQ (accordion, no JS, agent-readable) ---------- */
+.faq { max-width: 840px; }
+.faq details { border-bottom: 1px solid var(--line); }
+.faq details:first-of-type { border-top: 1px solid var(--line); }
+.faq summary {
+  list-style: none; cursor: pointer; position: relative;
+  padding: 24px 48px 24px 0;
+  font-family: var(--font-display); text-transform: uppercase;
+  font-size: 1.18rem; letter-spacing: -0.01em; color: var(--ink);
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after {
+  content: "+"; position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
+  font-family: var(--font-mono); font-size: 1.5rem; line-height: 1; color: var(--color-accent);
+}
+.faq details[open] summary::after { content: "\2013"; }
+.faq summary:hover { color: var(--color-accent); }
+.faq details p { padding: 0 48px 26px 0; margin: 0; color: var(--ink-soft); }
+
 /* ---------- Contact blocks ---------- */
 .contact-grid {
   display: grid;

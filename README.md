@@ -79,6 +79,24 @@ Current placeholder image URLs (all on `d8j0ntlcm91z4.cloudfront.net/...`):
 | Market · Agricultural | `hf_20260616_201144_b6227ef4-...png` |
 | Feature · Cure oven | `hf_20260616_201203_d98044de-...png` |
 
+## Built for agents too (machine-readability)
+
+The site is structured so AI assistants and crawlers can read the business
+reliably, not just render it:
+
+- **`llms.txt`** — llmstxt.org-style markdown brief of the business + page map.
+- **`robots.txt`** — explicitly allows major AI crawlers (ClaudeBot, GPTBot,
+  PerplexityBot, Google-Extended, etc.) and links the sitemap.
+- **`sitemap.xml`** — all five pages.
+- **JSON-LD** on the home page: an enriched `LocalBusiness` (address, geo,
+  area served, hours, service `OfferCatalog`) plus a `FAQPage`.
+- **FAQ section** — semantic `<details>` accordion (no JS), the human-readable
+  twin of the FAQ schema.
+
+Verify before launch: the `geo` coordinates in the `LocalBusiness` JSON-LD are
+**approximate (Maysville city center)** — replace with the exact shop
+coordinates. Add `telephone` to the JSON-LD and `llms.txt` once a number exists.
+
 ## Brand & logo
 
 - **Logo:** the real KPC logo is in place — `assets/img/logo.png` (white

@@ -187,6 +187,41 @@
       </div>
     </section>
 
+    <section class="alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Common Questions</span>
+          <h2>Good to know.</h2>
+        </div>
+        <div class="faq reveal">
+          <details>
+            <summary>What can you powder coat?</summary>
+            <p>Most metals — mild steel, stainless steel, aluminum, and cast iron. We coat industrial, automotive, architectural, agricultural, and custom parts, from one-off pieces to production runs.</p>
+          </details>
+          <details>
+            <summary>How large a part can you coat?</summary>
+            <p>We handle large, heavy parts up to 40 feet long — including structural steel, long weldments, trailers, and oversized fabrications that won't fit at most shops. Send us the dimensions and we'll confirm.</p>
+          </details>
+          <details>
+            <summary>Where are you located and what areas do you serve?</summary>
+            <p>We're at 679 Parker Drive, Maysville, KY 41056, serving Maysville, Mason County, northeastern Kentucky, and the surrounding region.</p>
+          </details>
+          <details>
+            <summary>What colors and finishes are available?</summary>
+            <p>Hundreds of RAL colors in gloss, satin, matte, textured, metallic, and candy/translucent finishes. If you have a RAL code or a sample to match, bring it.</p>
+          </details>
+          <details>
+            <summary>How long does it take, and how do I get a quote?</summary>
+            <p>We respond to most quote requests within one business day; turnaround depends on size, quantity, and prep. Use the <a href="quote.html">Request a Quote</a> form or email <a href="mailto:info@kentuckypc.com">info@kentuckypc.com</a> with your parts, quantity, size, substrate, and color.</p>
+          </details>
+          <details>
+            <summary>Do you do surface prep and small jobs?</summary>
+            <p>Yes. We provide in-house media blasting, degreasing, and chemical pretreatment, and we take both one-off custom pieces and larger production runs.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
     <section class="cta-banner">
       <div class="container row">
         <div>
@@ -248,11 +283,15 @@
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
+    "@id": "https://kentuckypc.com/#business",
     "name": "Kentucky Powder Coating",
-    "image": "https://kentuckypc.com/assets/img/logo-placeholder.svg",
+    "alternateName": "KPC",
+    "image": "https://kentuckypc.com/assets/img/og-image.png",
+    "logo": "https://kentuckypc.com/assets/img/icon-512.png",
     "url": "https://kentuckypc.com/",
     "email": "info@kentuckypc.com",
-    "description": "Durable, precision powder coating for industrial, automotive, and custom projects in Maysville, Kentucky and the surrounding region.",
+    "foundingDate": "2026",
+    "description": "Heavy-industrial and custom powder coating in Maysville, Kentucky. Durable, color-matched finishes for industrial steel, fabrication, automotive, architectural, agricultural, and custom work — parts up to 40 feet long.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "679 Parker Drive",
@@ -261,13 +300,50 @@
       "postalCode": "41056",
       "addressCountry": "US"
     },
-    "areaServed": "Kentucky",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 38.6412,
+      "longitude": -83.7444
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Maysville" },
+      { "@type": "AdministrativeArea", "name": "Mason County, Kentucky" },
+      { "@type": "State", "name": "Kentucky" }
+    ],
+    "knowsAbout": ["Powder coating", "Surface preparation", "Sandblasting", "Metal finishing", "Electrostatic coating"],
     "openingHoursSpecification": [{
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
       "opens": "07:30",
       "closes": "17:00"
-    }]
+    }],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Powder Coating Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Industrial & Fabrication Powder Coating", "description": "Structural steel, weldments, skids, racks, trailers, and production runs — parts up to 40 feet long." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Automotive & Performance Powder Coating", "description": "Frames, wheels, suspension, bumpers, and restoration parts." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Architectural & Commercial Powder Coating", "description": "Railings, gates, façade components, and site furnishings." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Agricultural & Equipment Powder Coating", "description": "Implements, attachments, and heavy equipment refinishing." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom & Restoration Powder Coating", "description": "Motorcycles, furniture, firearms, and one-off custom projects." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Surface Preparation", "description": "Media blasting, degreasing, and chemical pretreatment." } }
+      ]
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "What can you powder coat?", "acceptedAnswer": { "@type": "Answer", "text": "Most metals — mild steel, stainless steel, aluminum, and cast iron. We coat industrial, automotive, architectural, agricultural, and custom parts, from one-off pieces to production runs." } },
+      { "@type": "Question", "name": "How large a part can you coat?", "acceptedAnswer": { "@type": "Answer", "text": "We handle large, heavy parts up to 40 feet long — including structural steel, long weldments, trailers, and oversized fabrications that won't fit at most shops. Send us the dimensions and we'll confirm." } },
+      { "@type": "Question", "name": "Where are you located and what areas do you serve?", "acceptedAnswer": { "@type": "Answer", "text": "We're at 679 Parker Drive, Maysville, KY 41056, serving Maysville, Mason County, northeastern Kentucky, and the surrounding region." } },
+      { "@type": "Question", "name": "What colors and finishes are available?", "acceptedAnswer": { "@type": "Answer", "text": "Hundreds of RAL colors in gloss, satin, matte, textured, metallic, and candy/translucent finishes. If you have a RAL code or a sample to match, bring it." } },
+      { "@type": "Question", "name": "How long does powder coating take, and how do I get a quote?", "acceptedAnswer": { "@type": "Answer", "text": "We respond to most quote requests within one business day; turnaround depends on size, quantity, and prep. Request a quote through our online form or email info@kentuckypc.com with your parts, quantity, size, substrate, and color." } },
+      { "@type": "Question", "name": "Do you do surface prep and small jobs?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We provide in-house media blasting, degreasing, and chemical pretreatment, and we take both one-off custom pieces and larger production runs." } }
+    ]
   }
   </script>
 
